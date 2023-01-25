@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  width: 80vw;
+}
+
+h2 {
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel {
+  height: 80vh;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  border-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  color: #fff;
+  transition: flex 0.7 ease-in;
+}
+
+.panel-1 {
+  background-image: url("./assets/pexels-abbas-mohammed-3680904.jpg");
+}
+
+.panel-2 {
+  background-image: url("./assets/pexels-brakou-abdelghani-1723637.jpg");
+}
+
+.panel-3 {
+  background-image: url("./assets/pexels-todd-trapani-1420440.jpg");
+}
+
+.panel-4 {
+  background-image: url("./assets/pexels-eberhard-grossgasteiger-1366919.jpg");
+}
+.panel-5 {
+  background-image: url("./assets/pexels-eberhard-grossgasteiger-1624496.jpg");
+}
+.panel-6 {
+  background-image: url("./assets/pexels-mo'men-salah-3819046.jpg");
+}
+.panel-7 {
+  background-image: url("./assets/pexels-oliver-sjöström-1433052.jpg");
+}
+
+.panel.active {
+  flex: 3;
+}
+
+.panel.active h2 {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel-6,
+  .panel-7 {
+    display: none;
+  }
+}
