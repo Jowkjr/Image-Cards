@@ -38,7 +38,7 @@ h2 {
   background-position: center;
   cursor: pointer;
   color: #fff;
-  transition: flex 0.7 ease-in;
+  transition: flex 0.5s ease-in;
 }
 
 .panel-1 {
@@ -72,6 +72,7 @@ h2 {
 
 .panel.active h2 {
   opacity: 1;
+  transition: opacity 0.3s ease-out 0.4s;
 }
 
 @media (max-width: 480px) {
